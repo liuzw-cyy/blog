@@ -1,15 +1,8 @@
 ---
-title: README
-date: '2023-04-04'
-author:
-  name: liuzw
-  link: 'https://github.com/liuzw-cyy'
-tags:
-  - 未分类
-permalink: /pages/a0076e/
+
 ---
 <h2 align="center">
-愧怍的个人博客
+liuzw的个人博客
 </h2><br>
 
 <pre align="center">
@@ -76,7 +69,7 @@ permalink: /pages/a0076e/
 ## 📥 Start
 
 ```sh
-git clone https://github.com/kuizuo/blog.git
+git clone https://github.com/liuzw-cyy/blog.git
 cd blog
 yarn
 yarn start
