@@ -18,7 +18,8 @@ function addFrontMatter(folderPath, PREFIX) {
       // 添加 front matter
       data.title = data.title || file.name
       data.date = dateStr;
-      data.author = {name:'liuzw', link:'https://github.com/liuzw-cyy'}
+      data.author = 'liuzw';
+      data.link = 'https://github.com/liuzw-cyy';
       data.tags = data.tags || ['未分类'];
       data.permalink = `${PREFIX + (Math.random() + Math.random()).toString(16).slice(2, 8)}/`;
       const newContent = matter.stringify(content, data);
