@@ -64,7 +64,7 @@ module.exports = config
 
 具体可在 `src/pages/about.mdx` 中查看与修改。
 
-其中技术栈的图标使用 [Shields.io](https://shields.io/) 生成，github 的状态信息使用[GitHub Profile Summary Cards](https://github-profile-summary-cards.vercel.app/demo.html)生成
+其中技术栈的图标使用 [Shields.io](https://shields.io/) 生成，github 的状态信息使用[Metrics](https://metrics.lecoq.io/)生成
 
 所要做的就是将 username 替换成你的 github 名即可。
 
