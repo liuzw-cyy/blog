@@ -4,7 +4,7 @@ const addFrontMatter = require('./src/utils/addFrontMatter');  // 引入自定�
 const beian = '闽ICP备2020017848号-2';
 
 // 获取当前项目的根目录
-const folderPath = '../blog';
+const folderPath = './docs';
 const PREFIX = '/pages/';
 
 /** @type {import('@docusaurus/types').Config} */
