@@ -30,7 +30,7 @@ function readFileList(dir, filesList = []) {
           type = filename.substring(lastDotIndex + 1);
         }
 
-        if (type === 'md') { // 过滤非md文件
+        if (type === 'md' && name !== 'README') { // 过滤README.md和非md文件
           filesList.push({
             name,
             filePath
