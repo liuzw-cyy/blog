@@ -243,11 +243,11 @@ const config = {
       playgroundPosition: 'top',
     },
     socials: {
-      github: 'https://github.com/kuizuo',
+      github: 'https://github.com/-cyy',
       twitter: 'https://twitter.com/kuizuo',
       juejin: 'https://juejin.cn/user/1565318510545901',
       csdn: 'https://blog.csdn.net/kuizuo12',
-      qq: 'https://wpa.qq.com/msgrd?v=3&amp;uin=911993023&amp;site=qq',
+      qq: 'https://wpa.qq.com/msgrd?v=3&amp;uin=3358795244&amp;site=qq',
       zhihu: 'https://www.zhihu.com/people/kuizuo',
       cloudmusic: 'https://music.163.com/#/user/home?id=1333010742',
     },
@@ -301,7 +301,7 @@ const config = {
         editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
           `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
-        blogDescription: '愧怍的个人博客',
+        blogDescription: 'liuzw的个人博客',
         blogSidebarCount: 10,
         blogSidebarTitle: '最近更新',
         postsPerPage: 10,
@@ -310,8 +310,8 @@ const config = {
           defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
         feedOptions: {
           type: 'all',
-          title: '愧怍',
-          copyright: `Copyright © ${new Date().getFullYear()} 愧怍 Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
+          title: 'liuzw',
+          copyright: `Copyright © ${new Date().getFullYear()} liuzw Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
         },
       },
     ],
