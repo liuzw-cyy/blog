@@ -1,11 +1,11 @@
-const path = require('path')
-const addFrontMatter = require('./src/utils/addFrontMatter')  // 引入自定义的addFrontMatter函数
+const path = require('path');
+const addFrontMatter = require('./src/utils/addFrontMatter');  // 引入自定义的addFrontMatter函数
 
-const beian = '闽ICP备2020017848号-2'
+const beian = '闽ICP备2020017848号-2';
 
 // 获取当前项目的根目录
-const folderPath = '../blog'
-const PREFIX = '/pages/'
+const folderPath = '../blog';
+const PREFIX = '/pages/';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -43,8 +43,8 @@ const config = {
       title: 'liuzw',
       logo: {
         alt: 'liuzw',
-        src: 'img/logo.webp',
-        srcDark: 'img/logo.webp',
+        src: 'img/logo.png',
+        srcDark: 'img/logo.png',
       },
       hideOnScroll: true,
       items: [
@@ -360,9 +360,9 @@ const config = {
       },
     },
   },
-}
+};
 
 // 每次新建md文件时，自动在md文件头部添加frontmatter
-addFrontMatter(folderPath, PREFIX)
+addFrontMatter(folderPath, PREFIX);
 
-module.exports = config
+module.exports = config;
