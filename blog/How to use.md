@@ -14,9 +14,9 @@ permalink: /pages/d9ebfd/
 :::tip
 description: 展示卡片的描述
 
-image: 展示卡片的图片
+image: 展示卡片的缩略图或封面
 
-sticky: 1
+sticky: number
 :::
 
 
