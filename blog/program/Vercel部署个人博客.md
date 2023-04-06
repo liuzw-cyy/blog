@@ -99,11 +99,6 @@ image: https://img.kuizuo.cn/image-20220511170700075.png
 
 ![image-20220511173442694](https://img.kuizuo.cn/image-20220511173442694.png)
 
-## Serverless
-
-同时 vercel 还支持 serverless，也就是说，不仅能部署静态站点，还能部署后端服务，不过肯定有一定的限制。
-
-[Vercel 部署 Serverless](/vercel-deploy-serverless)
 
 ## Edge Functions
 
