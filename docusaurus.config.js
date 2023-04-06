@@ -40,7 +40,7 @@ const config = {
       },
     },
     navbar: {
-      title: 'liuzw',
+      title: '🏡 liuzw',
       logo: {
         alt: 'liuzw',
         src: 'img/logo.png',
@@ -49,25 +49,25 @@ const config = {
       hideOnScroll: true,
       items: [
         {
-          label: '📚Notes',
+          label: '📚 Notes',
           position: 'right',
           items: [
             {
-              label: '✒笔记',
+              label: '✒ 笔记',
               to: 'docs/skill/',
             }
           ],
         },
         {
-          label: '✍Blog',
+          label: '✍ Blog',
           position: 'right',
           items: [
             {
-              label: '💻全部博文',
+              label: '💻 全部博文',
               to: 'tags',
             },
             {
-              label: '⏰时间轴',
+              label: '⏰ 时间轴',
               to: 'archive',
             },
           ]
@@ -77,20 +77,24 @@ const config = {
           position: 'right',
           items: [
             {
-              label: '✨生活指南',
+              label: '✨ 生活指南',
               to: 'tags',
             },
           ],
         },
         {
-          label: '导航',
+          label: '🔗 Links',
           position: 'right',
-          to: 'resource',
-        },
-        {
-          label: '项目',
-          position: 'right',
-          to: 'project',
+          items: [
+            {
+              label: '导航',
+              to: 'resource',
+            },
+            {
+              label: '项目',
+              to: 'project',
+            },
+          ],
         },
         // 注释掉导航栏的语言下拉选择栏
         // {
