@@ -49,54 +49,36 @@ const config = {
       hideOnScroll: true,
       items: [
         {
-          label: '学习',
+          label: '📚Notes',
           position: 'right',
           items: [
             {
-              label: '标签',
-              to: 'tags',
-            },
-            {
-              label: '归档',
-              to: 'archive',
-            },
-            {
-              label: '笔记',
+              label: '✒笔记',
               to: 'docs/skill/',
-            },
-            {
-              label: '工具推荐',
-              to: 'docs/tools/',
-            },
-            {
-              label: '前端示例',
-              to: 'https://example.kuizuo.cn',
-            },
+            }
           ],
         },
         {
-          label: '工具',
+          label: '✍Blog',
           position: 'right',
           items: [
             {
-              label: 'API服务',
-              to: 'https://api.kuizuo.cn',
+              label: '💻全部博文',
+              to: 'tags',
             },
             {
-              label: 'JS代码还原',
-              to: 'https://js-de-obfuscator.kuizuo.cn',
+              label: '⏰时间轴',
+              to: 'archive',
             },
+          ]
+        },
+        {
+          label: '📸 Life Style',
+          position: 'right',
+          items: [
             {
-              label: 'CyberChef加密',
-              to: 'https://cipher.kuizuo.cn',
-            },
-            {
-              label: 'Transform',
-              to: 'https://transform.kuizuo.cn',
-            },
-            {
-              label: '网盘',
-              to: 'https://pan.kuizuo.cn',
+              label: '✨生活指南',
+              to: 'tags',
             },
           ],
         },
@@ -110,10 +92,11 @@ const config = {
           position: 'right',
           to: 'project',
         },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
+        // 注释掉导航栏的语言下拉选择栏
+        // {
+        //   type: 'localeDropdown',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
@@ -244,7 +227,6 @@ const config = {
     },
     socials: {
       github: 'https://github.com/liuzw-cyy',
-      twitter: 'https://twitter.com/kuizuo',
       juejin: 'https://juejin.cn/user/1565318510545901',
       csdn: 'https://blog.csdn.net/kuizuo12',
       qq: 'https://wpa.qq.com/msgrd?v=3&amp;uin=3358795244&amp;site=qq',
@@ -302,8 +284,8 @@ const config = {
           `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
         blogDescription: 'liuzw的个人博客',
-        blogSidebarCount: 10,
-        blogSidebarTitle: '最近更新',
+        blogSidebarCount: 'ALL',
+        blogSidebarTitle: '所有文章',
         postsPerPage: 10,
         showReadingTime: true,
         readingTime: ({ content, frontMatter, defaultReadingTime }) =>
