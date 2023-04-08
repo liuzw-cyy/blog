@@ -1,16 +1,13 @@
 ---
 id: docusaurus-guides
 slug: /docusaurus-guides
-title: Docusaurus 主题魔改
+title: Docusaurus Theme
 authors: kuizuo
 keywords:
-  - guides
   - docusaurus
-  - docusaurus-guides
 date: 2023-04-04 12:14:40
 permalink: /pages/e70a6f/
 categories:
-  - skill
   - docusaurus
 tags:
   - 笔记

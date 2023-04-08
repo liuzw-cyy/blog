@@ -4,16 +4,16 @@ slug: /vscode-config
 title: VScode相关配置
 date: 2021-08-03 00:00:00
 authors: kuizuo
-tags: 
+tags:
   - vscode
   - 开发工具
   - 配置
-keywords: 
+keywords:
   - vscode
   - 开发工具
   - 配置
 permalink: /pages/cc8ed2/
-categories: 
+categories:
   - tools
 ---
 

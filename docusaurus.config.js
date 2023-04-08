@@ -51,12 +51,7 @@ const config = {
         {
           label: '📚 Notes',
           position: 'right',
-          items: [
-            {
-              label: '✒ 笔记',
-              to: 'docs/skill/',
-            }
-          ],
+          to: 'docs/note',
         },
         {
           label: '✍ Blog',
@@ -165,18 +160,13 @@ const config = {
               position: 'right',
               to: 'resource',
             },
-            // {
-            //   label: '我的站点',
-            //   position: 'right',
-            //   to: 'website',
-            // },
             {
               html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img style="height:50px;margin-top:0.5rem" src="/img/buildwith.png" /><a/>`,
             },
           ],
         },
       ],
-      copyright: `<p><a href="http://beian.miit.gov.cn/" >${beian}</a></p><p>Copyright © 2020 - PRESENT 愧怍 Built with Docusaurus.</p>`,
+      copyright: `<p><a href="http://beian.miit.gov.cn/" >${beian}</a></p><p>Copyright © 2020 - PRESENT liuzw Built with Docusaurus.</p>`,
     },
     prism: {
       theme: require('prism-react-renderer/themes/vsLight'),
@@ -285,7 +275,7 @@ const config = {
         path: 'blog',
         routeBasePath: '/',
         editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
-          `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
+          `https://github.com/liuzw-cyy/blog/edit/main/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
         blogDescription: 'liuzw的个人博客',
         blogSidebarCount: 'ALL',
