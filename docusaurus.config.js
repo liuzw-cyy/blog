@@ -114,7 +114,7 @@ const config = {
             },
             {
               label: '技术笔记',
-              to: 'docs/skill',
+              to: 'docs/note',
             },
             {
               label: '实战项目',

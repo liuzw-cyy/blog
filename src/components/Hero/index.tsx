@@ -44,7 +44,7 @@ function Hero() {
             id="homepage.hero.look"
             values={{
               note: (
-                <Link to="/docs/skill">
+                <Link to="/docs/note">
                   <Translate id="hompage.hero.note">技术笔记</Translate>
                 </Link>
               ),
