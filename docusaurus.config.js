@@ -13,6 +13,9 @@ const config = {
   titleDelimiter: '-',
   url: 'https://kuizuo.cn',
   baseUrl: '/',
+  // c
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/favicon.ico',
   organizationName: 'kuizuo',
   projectName: 'blog',
