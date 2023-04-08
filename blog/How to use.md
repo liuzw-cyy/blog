@@ -1,7 +1,7 @@
 ---
 title: How to use
-date: '2023-04-05'
-author: liuzw
+date: 2023-04-05
+authors: liuzw
 link: 'https://github.com/liuzw-cyy'
 tags:
   - Tips

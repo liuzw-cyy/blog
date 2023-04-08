@@ -17,5 +17,6 @@ tags:
 - Vue
 - React
 - JavaScript
+- TypeScript
 
 **做到即查即用，能复制粘贴解决的，就绝不百度。**
