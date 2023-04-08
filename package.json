@@ -2,12 +2,12 @@
   "name": "blog",
   "version": "2.3.1",
   "author": {
-    "url": "https://github.com/kuizuo",
+    "url": "https://github.com/liuzw-cyy",
     "email": "hi@kuizuo.cn",
-    "name": "Kuizuo"
+    "name": "liuzw"
   },
   "repository": {
-    "url": "https://github.com/kuizuo/blog",
+    "url": "https://github.com/liuzw-cyy/blog",
     "type": "git"
   },
   "homepage": "https://kuizuo.cn",
@@ -49,6 +49,7 @@
     "docusaurus-plugin-image-zoom": "^0.1.1",
     "docusaurus-plugin-matomo": "^0.0.6",
     "docusaurus-plugin-sass": "^0.2.2",
+    "giscus": "^1.2.8",
     "gray-matter": "^4.0.3",
     "json2yaml": "^1.1.0",
     "loadsh": "^0.0.4",

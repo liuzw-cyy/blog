@@ -1,4 +1,10 @@
 kuizuo:
+  name: kuizuo
+  title: Javascripter / 学生
+  url: https://github.com/Kuizuo
+  image_url: /img/logo.png
+
+liuzw:
   name: liuzw
   title: Javascripter / 学生
   url: https://github.com/liuzw-cyy
