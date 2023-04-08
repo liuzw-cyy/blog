@@ -17,7 +17,7 @@ const config = {
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/favicon.ico',
-  organizationName: 'kuizuo',
+  organizationName: 'liuzw',
   projectName: 'blog',
   tagline: '记录所学知识，领略编程之美',
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -195,7 +195,7 @@ const config = {
     algolia: {
       appId: 'GV6YN1ODMO',
       apiKey: '50303937b0e4630bec4a20a14e3b7872',
-      indexName: 'kuizuo',
+      indexName: 'liuzw',
     },
     zoom: {
       selector: '.markdown :not(em) > img',
@@ -212,10 +212,10 @@ const config = {
       jsLoader: 'matomo.js',
     },
     giscus: {
-      repo: 'kuizuo/blog',
-      repoId: 'MDEwOlJlcG9zaXRvcnkzOTc2MjU2MTI=',
-      category: 'General',
-      categoryId: 'DIC_kwDOF7NJDM4CPK95',
+      repo: 'liuzw-cyy/blog',
+      repoId: 'R_kgDOJS8cbQ',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOJS8cbc4CVoe-',
       theme: 'light',
       darkTheme: 'dark',
     },
