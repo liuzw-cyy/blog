@@ -26,12 +26,8 @@ function addFrontMatter(folderPath, PREFIX) {
 
       // 写回原文件
       fs.writeFileSync(file.filePath, newContent);
-    } else if(data.authors === 'kuizuo') {
-      data.authors = 'liuzw';
-      const newContent = matter.stringify(content, data);
-
-      // 写回原文件
-      fs.writeFileSync(file.filePath, newContent);
+    } else {
+      return;
     }
   });
 }
