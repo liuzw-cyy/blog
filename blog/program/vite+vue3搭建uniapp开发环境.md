@@ -1,10 +1,18 @@
 ---
 slug: vite-vue3-build-uniapp-environment
 title: vite+vue3搭建uniapp开发环境
-date: 2022-03-27
-authors: kuizuo
-tags: [vue, vite, uniapp, develop]
-keywords: [vue, vite, uniapp, develop]
+date: 2022-03-27T00:00:00.000Z
+authors: liuzw
+tags:
+  - vue
+  - vite
+  - uniapp
+  - develop
+keywords:
+  - vue
+  - vite
+  - uniapp
+  - develop
 description: 使用 vite vue3 搭建 uniapp 开发环境
 ---
 

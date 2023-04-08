@@ -2,10 +2,10 @@
 id: docusaurus-guides
 slug: /docusaurus-guides
 title: Docusaurus Theme
-authors: kuizuo
+authors: liuzw
 keywords:
   - docusaurus
-date: 2023-04-04 12:14:40
+date: 2023-04-04T12:14:40.000Z
 permalink: /pages/e70a6f/
 categories:
   - docusaurus

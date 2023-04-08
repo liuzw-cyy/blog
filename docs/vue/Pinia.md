@@ -2,16 +2,16 @@
 id: pinia
 slug: /pinia
 title: Pinia
-date: 2020-10-23 00:00:00
-authors: kuizuo
-tags: 
+date: 2020-10-23T00:00:00.000Z
+authors: liuzw
+tags:
   - vue
   - pinia
-keywords: 
+keywords:
   - vue
   - pinia
 permalink: /pages/1c1c6e/
-categories: 
+categories:
   - skill
   - vue
 ---

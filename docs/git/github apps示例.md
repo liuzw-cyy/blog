@@ -2,16 +2,16 @@
 id: github-apps-example
 slug: github-apps-example
 title: github apps示例
-date: 2021-10-01 00:00:00
-authors: kuizuo
-tags: 
+date: 2021-10-01T00:00:00.000Z
+authors: liuzw
+tags:
   - github
   - app
-keywords: 
+keywords:
   - github
   - app
 permalink: /pages/f54f66/
-categories: 
+categories:
   - skill
   - git
 ---

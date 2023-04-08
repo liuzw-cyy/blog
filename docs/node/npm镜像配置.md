@@ -2,18 +2,18 @@
 id: npm-mirror-config
 slug: /npm-mirror-config
 title: npm镜像配置
-date: 2022-03-17 00:00:00
-authors: kuizuo
-tags: 
+date: 2022-03-17T00:00:00.000Z
+authors: liuzw
+tags:
   - node
   - npm
   - electron
-keywords: 
+keywords:
   - node
   - npm
   - electron
 permalink: /pages/c7b6ad/
-categories: 
+categories:
   - skill
   - node
 ---

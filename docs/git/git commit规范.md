@@ -2,16 +2,16 @@
 id: git-conmit-specification
 slug: git-conmit-specification
 title: git commit规范
-date: 2021-08-31 00:00:00
-authors: kuizuo
-tags: 
+date: 2021-08-31T00:00:00.000Z
+authors: liuzw
+tags:
   - git
   - commit
-keywords: 
+keywords:
   - git
   - commit
 permalink: /pages/2c42e4/
-categories: 
+categories:
   - skill
   - git
 ---

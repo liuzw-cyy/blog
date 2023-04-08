@@ -2,16 +2,16 @@
 id: js-print-stack-of-function
 slug: /js-print-stack-of-function
 title: JS输出函数调用栈
-date: 2021-10-15 00:00:00
-authors: kuizuo
-tags: 
+date: 2021-10-15T00:00:00.000Z
+authors: liuzw
+tags:
   - javascript
   - callstack
-keywords: 
+keywords:
   - javascript
   - callstack
 permalink: /pages/9f3a8e/
-categories: 
+categories:
   - skill
   - js
 ---

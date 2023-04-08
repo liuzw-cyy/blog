@@ -2,16 +2,16 @@
 id: fix-docker-config-that-cannot-start-up
 slug: /fix-docker-config-that-cannot-start-up
 title: 修改无法启动的Docker容器配置文件
-date: 2021-08-17 00:00:00
-authors: kuizuo
-tags: 
+date: 2021-08-17T00:00:00.000Z
+authors: liuzw
+tags:
   - docker
   - elasticsearch
-keywords: 
+keywords:
   - docker
   - elasticsearch
 permalink: /pages/5813b2/
-categories: 
+categories:
   - skill
   - docker
 ---

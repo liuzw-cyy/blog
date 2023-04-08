@@ -1,10 +1,16 @@
 ---
 slug: cookie-of-node-and-browser
 title: node与浏览器中的cookie
-date: 2020-12-10
-authors: kuizuo
-tags: [node, axios, cookie]
-keywords: [node, axios, cookie]
+date: 2020-12-10T00:00:00.000Z
+authors: liuzw
+tags:
+  - node
+  - axios
+  - cookie
+keywords:
+  - node
+  - axios
+  - cookie
 ---
 
 <!-- truncate -->

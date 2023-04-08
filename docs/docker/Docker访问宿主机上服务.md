@@ -2,14 +2,14 @@
 id: docker-accesses-host-service
 slug: /docker-accesses-host-service
 title: Docker访问宿主机上服务
-date: 2022-05-25 00:00:00
-authors: kuizuo
-tags: 
+date: 2022-05-25T00:00:00.000Z
+authors: liuzw
+tags:
   - docker
-keywords: 
+keywords:
   - docker
 permalink: /pages/4d47a3/
-categories: 
+categories:
   - skill
   - docker
 ---

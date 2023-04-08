@@ -2,14 +2,14 @@
 id: github-other
 slug: github-other
 title: .github 其他文件
-date: 2021-10-01 00:00:00
-authors: kuizuo
-tags: 
+date: 2021-10-01T00:00:00.000Z
+authors: liuzw
+tags:
   - github
-keywords: 
+keywords:
   - github
 permalink: /pages/84fa52/
-categories: 
+categories:
   - skill
   - git
 ---

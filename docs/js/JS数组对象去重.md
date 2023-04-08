@@ -2,14 +2,14 @@
 id: js-array-object-unique
 slug: /js-array-object-unique
 title: JS数组对象去重
-date: 2021-07-05 00:00:00
-authors: kuizuo
-tags: 
+date: 2021-07-05T00:00:00.000Z
+authors: liuzw
+tags:
   - javascript
-keywords: 
+keywords:
   - javascript
 permalink: /pages/12c084/
-categories: 
+categories:
   - skill
   - js
 ---

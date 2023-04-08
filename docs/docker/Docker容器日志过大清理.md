@@ -2,14 +2,14 @@
 id: docker-container-log-clean
 slug: /docker-container-log-clean
 title: Docker容器日志过大清理
-date: 2021-10-16 00:00:00
-authors: kuizuo
-tags: 
+date: 2021-10-16T00:00:00.000Z
+authors: liuzw
+tags:
   - docker
-keywords: 
+keywords:
   - docker
 permalink: /pages/914c26/
-categories: 
+categories:
   - skill
   - docker
 ---

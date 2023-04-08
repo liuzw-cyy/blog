@@ -2,16 +2,16 @@
 id: github-actions-example
 slug: github-actions-example
 title: github actions示例
-date: 2021-10-01 00:00:00
-authors: kuizuo
-tags: 
+date: 2021-10-01T00:00:00.000Z
+authors: liuzw
+tags:
   - github
   - action
-keywords: 
+keywords:
   - github
   - action
 permalink: /pages/b1f790/
-categories: 
+categories:
   - skill
   - git
 ---

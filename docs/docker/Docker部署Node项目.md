@@ -2,16 +2,16 @@
 id: docker-deploy-node-project
 slug: /docker-deploy-node-project
 title: Docker部署Node项目
-date: 2022-05-25 00:00:00
-authors: kuizuo
-tags: 
+date: 2022-05-25T00:00:00.000Z
+authors: liuzw
+tags:
   - docker
   - node
-keywords: 
+keywords:
   - docker
   - node
 permalink: /pages/a57447/
-categories: 
+categories:
   - skill
   - docker
 ---

@@ -1,10 +1,16 @@
 ---
 slug: docusaurus-gitalk-plugin
 title: Docusaurus配置Gitalk评论插件
-date: 2022-01-22
-authors: kuizuo
-tags: [blog, docusaurus, gitalk]
-keywords: [blog, docusaurus, gitalk]
+date: 2022-01-22T00:00:00.000Z
+authors: liuzw
+tags:
+  - blog
+  - docusaurus
+  - gitalk
+keywords:
+  - blog
+  - docusaurus
+  - gitalk
 ---
 
 之前使用 vuepress 的时候，使用的评论系统是[Valine](https://valine.js.org/)，可是匿名用户也能直接评论，虽说会过滤垃圾信息，但是后台查看评论与通知总感觉没有那么实在。

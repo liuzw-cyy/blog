@@ -2,16 +2,16 @@
 id: vue-reactive-data-object
 slug: /vue-reactive-data-object
 title: Vue响应式数据之Object
-date: 2022-05-10 00:00:00
-authors: kuizuo
-tags: 
+date: 2022-05-10T00:00:00.000Z
+authors: liuzw
+tags:
   - vue
   - javascript
-keywords: 
+keywords:
   - vue
   - javascript
 permalink: /pages/ceec4b/
-categories: 
+categories:
   - skill
   - vue
 ---

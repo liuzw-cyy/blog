@@ -18,7 +18,7 @@ function addFrontMatter(folderPath, PREFIX) {
       // 添加 front matter
       data.title = data.title || file.name
       data.date = dateStr;
-      data.author = 'liuzw';
+      data.authors = 'liuzw';
       data.author_url = 'https://github.com/liuzw-cyy';
       data.tags = data.tags || ['未分类'];
       data.slug = `${PREFIX + (Math.random() + Math.random()).toString(16).slice(2, 8)}/`;
@@ -26,8 +26,12 @@ function addFrontMatter(folderPath, PREFIX) {
 
       // 写回原文件
       fs.writeFileSync(file.filePath, newContent);
-    } else {
-      return;
+    } else if(data.authors === 'kuizuo') {
+      data.authors = 'liuzw';
+      const newContent = matter.stringify(content, data);
+
+      // 写回原文件
+      fs.writeFileSync(file.filePath, newContent);
     }
   });
 }

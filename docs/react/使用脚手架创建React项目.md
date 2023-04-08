@@ -2,14 +2,14 @@
 id: create-react-app
 slug: /create-react-app
 title: 使用脚手架创建React项目
-date: 2021-09-15 00:00:00
-authors: kuizuo
-tags: 
+date: 2021-09-15T00:00:00.000Z
+authors: liuzw
+tags:
   - react
-keywords: 
+keywords:
   - react
 permalink: /pages/928c1b/
-categories: 
+categories:
   - skill
   - react
 ---

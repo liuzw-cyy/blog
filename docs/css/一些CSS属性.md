@@ -2,14 +2,14 @@
 id: css-properties
 slug: /css-properties
 title: 一些CSS属性
-date: 2022-08-12 00:00:00
-authors: kuizuo
-tags: 
+date: 2022-08-12T00:00:00.000Z
+authors: liuzw
+tags:
   - css
-keywords: 
+keywords:
   - css
 permalink: /pages/9e668e/
-categories: 
+categories:
   - skill
   - css
 ---

@@ -2,18 +2,18 @@
 id: axios-request-gbk-page-encoding-solution
 slug: /axios-request-gbk-page-encoding-solution
 title: axios请求gbk页面乱码解决
-date: 2021-09-19 00:00:00
-authors: kuizuo
-tags: 
+date: 2021-09-19T00:00:00.000Z
+authors: liuzw
+tags:
   - node
   - axios
   - encode
-keywords: 
+keywords:
   - node
   - axios
   - encode
 permalink: /pages/82ef6f/
-categories: 
+categories:
   - skill
   - node
 ---

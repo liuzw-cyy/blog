@@ -1,10 +1,12 @@
 ---
 slug: brief-talk-http
 title: 浅谈HTTP
-date: 2020-09-29
-authors: kuizuo
-tags: [http]
-keywords: [http]
+date: 2020-09-29T00:00:00.000Z
+authors: liuzw
+tags:
+  - http
+keywords:
+  - http
 description: 记录 git 操作失误导致代码丢失与找回的过程
 ---
 

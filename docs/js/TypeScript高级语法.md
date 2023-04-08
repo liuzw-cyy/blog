@@ -2,14 +2,14 @@
 id: typescript-advanced-grammar
 slug: /typescript-advanced-grammar
 title: TypeScript高级语法
-date: 2022-06-25 00:00:00
-authors: kuizuo
-tags: 
+date: 2022-06-25T00:00:00.000Z
+authors: liuzw
+tags:
   - typescript
-keywords: 
+keywords:
   - typescript
 permalink: /pages/c84094/
-categories: 
+categories:
   - skill
   - js
 ---

@@ -2,10 +2,10 @@
 id: code-specification-guides
 slug: /code-specification
 title: 代码规范
-authors: kuizuo
+authors: liuzw
 keywords:
   - code-specification
-date: 2023-04-04 12:14:40
+date: 2023-04-04T12:14:40.000Z
 permalink: /pages/ab270e/
 categories:
   - skill

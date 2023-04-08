@@ -2,16 +2,16 @@
 id: react-hooks
 slug: /react-hooks
 title: React之hooks
-date: 2022-09-07 00:00:00
-authors: kuizuo
-tags: 
+date: 2022-09-07T00:00:00.000Z
+authors: liuzw
+tags:
   - react
   - hook
-keywords: 
+keywords:
   - react
   - hook
 permalink: /pages/03a8c0/
-categories: 
+categories:
   - skill
   - react
 ---

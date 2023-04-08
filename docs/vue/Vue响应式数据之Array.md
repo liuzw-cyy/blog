@@ -2,16 +2,16 @@
 id: vue-reactive-data-array
 slug: /vue-reactive-data-array
 title: Vue响应式数据之Array
-date: 2022-05-12 00:00:00
-authors: kuizuo
-tags: 
+date: 2022-05-12T00:00:00.000Z
+authors: liuzw
+tags:
   - vue
   - javascript
-keywords: 
+keywords:
   - vue
   - javascript
 permalink: /pages/7ff0a0/
-categories: 
+categories:
   - skill
   - vue
 ---

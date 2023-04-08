@@ -1,10 +1,16 @@
 ---
 slug: second-blog-is-docusaurus
 title: 第二个博客搭建之Docusaurus
-date: 2021-08-20
-authors: kuizuo
-tags: [blog, docusaurus, project]
-keywords: [blog, docusaurus, project]
+date: 2021-08-20T00:00:00.000Z
+authors: liuzw
+tags:
+  - blog
+  - docusaurus
+  - project
+keywords:
+  - blog
+  - docusaurus
+  - project
 description: 使用 docusaurus 搭建个人博客，并对其主题进行魔改
 image: /img/project/blog.png
 sticky: 5

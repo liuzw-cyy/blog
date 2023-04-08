@@ -2,14 +2,14 @@
 id: js-implement-function-cache
 slug: /js-implement-function-cache
 title: JS实现函数缓存
-date: 2021-11-22 00:00:00
-authors: kuizuo
-tags: 
+date: 2021-11-22T00:00:00.000Z
+authors: liuzw
+tags:
   - javascript
-keywords: 
+keywords:
   - javascript
 permalink: /pages/a89cc4/
-categories: 
+categories:
   - skill
   - js
 ---

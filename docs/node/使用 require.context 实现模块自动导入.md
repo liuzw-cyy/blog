@@ -2,16 +2,16 @@
 id: use-require.context-to-auto-import-modules
 slug: /use-require.context-to-auto-import-modules
 title: 使用 require.context 实现模块自动导入
-date: 2021-09-12 00:00:00
-authors: kuizuo
-tags: 
+date: 2021-09-12T00:00:00.000Z
+authors: liuzw
+tags:
   - node
   - webpack
-keywords: 
+keywords:
   - node
   - webpack
 permalink: /pages/47f526/
-categories: 
+categories:
   - skill
   - node
 ---

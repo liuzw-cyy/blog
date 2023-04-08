@@ -1,10 +1,14 @@
 ---
 slug: js-function-hook
 title: JS函数hook
-date: 2021-11-22
-authors: kuizuo
-tags: [javascript, hook]
-keywords: [javascript, hook]
+date: 2021-11-22T00:00:00.000Z
+authors: liuzw
+tags:
+  - javascript
+  - hook
+keywords:
+  - javascript
+  - hook
 ---
 
 <!-- truncate -->

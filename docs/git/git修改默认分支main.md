@@ -2,14 +2,14 @@
 id: git-change-default-branch
 slug: git-change-default-branch
 title: git修改默认分支main
-date: 2021-08-04 00:00:00
-authors: kuizuo
-tags: 
+date: 2021-08-04T00:00:00.000Z
+authors: liuzw
+tags:
   - git
-keywords: 
+keywords:
   - git
 permalink: /pages/d2edfb/
-categories: 
+categories:
   - skill
   - git
 ---

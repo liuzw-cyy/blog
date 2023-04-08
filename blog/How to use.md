@@ -1,8 +1,8 @@
 ---
 title: How to use
-date: 2023-04-05
+date: 2023-04-05T00:00:00.000Z
 authors: liuzw
-link: 'https://github.com/liuzw-cyy'
+url: 'https://github.com/liuzw-cyy'
 tags:
   - Tips
 permalink: /pages/d9ebfd/

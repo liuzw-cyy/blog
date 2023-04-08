@@ -1,10 +1,12 @@
 ---
 slug: content-type-of-http-request
 title: HTTP请求之Content-Type
-date: 2020-12-12
-authors: kuizuo
-tags: [http]
-keywords: [http]
+date: 2020-12-12T00:00:00.000Z
+authors: liuzw
+tags:
+  - http
+keywords:
+  - http
 ---
 
 <!-- truncate -->

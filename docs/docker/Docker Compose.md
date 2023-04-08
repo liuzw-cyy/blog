@@ -2,14 +2,14 @@
 id: docker-compose
 slug: /docker-compose
 title: Docker Compose
-date: 2021-05-26 00:00:00
-authors: kuizuo
-tags: 
+date: 2021-05-26T00:00:00.000Z
+authors: liuzw
+tags:
   - docker
-keywords: 
+keywords:
   - docker
 permalink: /pages/10efe0/
-categories: 
+categories:
   - skill
   - docker
 ---

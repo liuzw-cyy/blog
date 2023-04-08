@@ -1,10 +1,14 @@
 ---
 slug: gitlab-code-management-environment
 title: 搭建GitLab代码管理仓库
-date: 2022-04-15
-authors: kuizuo
-tags: [git, gitlab]
-keywords: [git, gitlab]
+date: 2022-04-15T00:00:00.000Z
+authors: liuzw
+tags:
+  - git
+  - gitlab
+keywords:
+  - git
+  - gitlab
 ---
 
 ![image-20220414235645607](https://img.kuizuo.cn/image-20220414235645607.png)
