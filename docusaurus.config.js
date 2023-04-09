@@ -16,7 +16,7 @@ const config = {
   // c
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.png',
   organizationName: 'liuzw',
   projectName: 'blog',
   tagline: '记录所学知识，领略编程之美',
