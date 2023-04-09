@@ -19,7 +19,7 @@ function addFrontMatter(folderPath, PREFIX) {
       data.title = data.title || file.name
       data.date = dateStr;
       data.authors = 'liuzw';
-      data.author_url = 'https://github.com/liuzw-cyy';
+      data.url = 'https://github.com/liuzw-cyy';
       data.tags = data.tags || ['未分类'];
       data.slug = `${PREFIX + (Math.random() + Math.random()).toString(16).slice(2, 8)}/`;
       const newContent = matter.stringify(content, data);
