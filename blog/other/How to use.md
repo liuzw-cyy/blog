@@ -1,0 +1,67 @@
+---
+title: 博客使用方法
+date: 2023-04-05T00:00:00.000Z
+authors: liuzw
+url: 'https://github.com/liuzw-cyy'
+tags:
+  - Tips
+permalink: /pages/d9ebfd/
+description: 此博客的一些使用技巧
+image: /img/project/blog.png
+sticky: 1
+---
+![](../../static/img/project/blog.png)
+如果你想搭建一个类似的博客，可以 [fork 本项目](https://github.com/liuzw-cyy/blog/fork)，修改个人信息，并将文章迁移过来，通过以下代码创建自己的博客。
+```bash
+git clone https://github.com/liuzw-cyy/blog
+cd blog
+yarn
+yarn start
+```
+
+<!-- truncate -->
+
+### 项目目录结构
+```bash
+├── blog                           # 博客
+│   ├── blog.md
+├── docs                           # 文档/笔记
+│   └── doc.md
+├── data                           # 项目/导航/友链数据
+│   ├── friend.ts                  # 友链
+│   ├── project.ts                 # 项目
+│   └── resource.ts                # 资源导航
+├── i18n                           # 国际化
+├── src
+│   ├── components                 # 组件
+│   ├── css                        # 自定义CSS
+│   ├── pages                      # 自定义页面
+│   ├── plugin                     # 自定义插件
+│   └── theme                      # 自定义主题组件
+├── static                         # 静态资源文件
+│   └── img                        # 静态图片
+├── docusaurus.config.js           # 站点的配置信息
+├── sidebars.js                    # 文档的侧边栏配置
+├── package.json
+├── tsconfig.json
+└── yarn.lock
+```
+
+按传统的方式，你编写好一篇文章后，需要重新打包成静态文件（.html），然后将静态文件上传到服务器（需要自己准备）上，然后通过 nginx 配置域名访问。如今有了自动化部署，你只需要将代码 push 到 Github 上，然后通过 CI/CD 自动化部署到服务器上。可以参考 [ci.yml](https://github.com/liuzw-cyy/blog/blob/main/.github/workflows/ci.yml) 配置文件。
+
+#### 如何将博客至于推荐阅读中
+在Markdown文件中的Front-matter中设置如下选项:
+
+:::tip
+description: 展示卡片的描述
+
+image: 展示卡片的缩略图或封面
+
+sticky: number
+:::
+
+## 最后
+
+博客的意义在于记录，记录自己的成长，记录自己的所思所想，记录自己的所学所得。希望更多的时间用在创作内容上，而不是在搭建博客上，诸君共勉！
+
+
