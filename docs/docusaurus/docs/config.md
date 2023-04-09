@@ -20,12 +20,12 @@ tags:
 
 ```javascript title='docusaurus.config.js'
 const config = {
-  title: '愧怍的小站',
+  title: 'liuzw的小站',
   titleDelimiter: '-',
   url: 'https://kuizuo.cn',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
-  organizationName: 'kuizuo',
+  favicon: 'img/logo.png',
+  organizationName: 'liuzw',
   projectName: 'blog',
   tagline: '记录所学知识，领略编程之美',
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -34,7 +34,7 @@ const config = {
     metadata: [
       {
         name: 'keywords',
-        content: '愧怍, kuizuo, blog, javascript, typescript, node, react, vue, web, 前端, 后端',
+        content: 'liuzw, blog, javascript, typescript, node, react, vue, web, 前端, 后端',
       },
     ],
     // ...
@@ -74,8 +74,7 @@ module.exports = config
 
 ```javascript title='docusaurus.config.js'
 socials: {
-    github: 'https://github.com/kuizuo',
-    twitter: 'https://twitter.com/kuizuo',
+    github: 'https://github.com/liuzw-cyy',
     juejin: 'https://juejin.cn/user/1565318510545901',
     csdn: 'https://blog.csdn.net/kuizuo12',
     qq: 'https://wpa.qq.com/msgrd?v=3&amp;uin=911993023&amp;site=qq',
