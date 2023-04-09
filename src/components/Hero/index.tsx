@@ -7,7 +7,7 @@ import { ThemeConfig } from '@docusaurus/preset-classic'
 
 import Link from '@docusaurus/Link'
 
-import HeroMain from './img/hero_main.svg'
+import HeroMain from './img/welcome.svg'
 
 import JuejinIcon from '@site/static/svg/juejin.svg'
 import { Icon } from '@iconify/react'
@@ -59,8 +59,8 @@ function Hero() {
                 </Link>
               ),
               idea: (
-                <Link to="/tags/随笔">
-                  <Translate id="hompage.hero.idea">想法感悟</Translate>
+                <Link to="/tags">
+                  <Translate id="hompage.hero.idea">博客</Translate>
                 </Link>
               ),
             }}
@@ -98,9 +98,6 @@ export function SocialLinks({ ...prop }) {
 
   return (
     <animated.div className={styles.social__links} {...prop}>
-      <a href="/rss.xml" target="_blank">
-        <Icon icon="ri:rss-line" />
-      </a>
       <a href={socials.github} target="_blank">
         <Icon icon="ri:github-line" />
       </a>
@@ -109,9 +106,6 @@ export function SocialLinks({ ...prop }) {
       </a>
       <a href={socials.qq} target="_blank">
         <Icon icon="ri:qq-line" />
-      </a>
-      <a href={socials.twitter} target="_blank">
-        <Icon icon="ri:twitter-line" />
       </a>
       <a href={socials.zhihu} target="_blank">
         <Icon icon="ri:zhihu-line" />
