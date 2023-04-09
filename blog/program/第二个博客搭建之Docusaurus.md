@@ -13,14 +13,14 @@ keywords:
   - project
 description: 使用 docusaurus 搭建个人博客，并对其主题进行魔改
 image: /img/project/blog.png
-sticky: 5
+sticky: 3
 ---
 
-博客地址: [愧怍的小站](https://kuizuo.cn/)
+博客地址: [liuzw的小站](https://liuzw-cyy.netlify.app/)
 
 时隔近半年没好好整理文章，博客也写的不像个人样。:joy:
 
-大半年没更新博客，一直忙着写项目（写到手软的那种），然后无意间在 B 站看到一个 Up 主 [峰华前端工程师](https://zxuqian.cn/) 基于 React 驱动的静态网站生成器搭建的个人博客。第一眼看到该站点的时候惊艳到我了，于是我在其基础上并魔改了一些页面功能，作为个人站点使用。
+大半年没更新博客，秋招结束之后就一直开始摆烂状态顺便写大论文，然后无意间在 B 站看到一个 Up 主 [峰华前端工程师](https://zxuqian.cn/) 基于 React 驱动的静态网站生成器搭建的个人博客。第一眼看到该站点的时候惊艳到我了，于是我在其基础上并魔改了一些页面功能，作为个人站点使用。
 
 > 不过国内 docusaurus 的使用者是真的少，Vuepress 都快烂大街了...
 
@@ -28,16 +28,16 @@ sticky: 5
 
 ## 安装
 
-如果你想搭建一个类似的博客，可以 [fork 本项目](https://github.com/kuizuo/blog/fork)，修改个人信息，并将文章迁移过来。这里推荐使用 [Vercel 部署个人博客](https://kuizuo.cn/vercel-deploy-blog)，以下是本地安装示例。
+如果你想搭建一个类似的博客，可以 [fork 本项目](https://github.com/liuzw-cyy/blog/fork)，修改个人信息，并将文章迁移过来。
 
 ```bash
-git clone https://github.com/kuizuo/blog
+git clone https://github.com/liuzw-cyy/blog
 cd blog
 yarn
 yarn start
 ```
 
-关于主题魔改可以看 [Docusaurus 主题魔改](https://kuizuo.cn/docs/docusaurus-guides)
+关于主题魔改可以看 [Docusaurus 主题魔改](https://liuzw-cyy.netlify.app/docs/docusaurus-guides)
 
 ## 一些页面
 
@@ -75,7 +75,6 @@ yarn start
 
 按传统的方式，你编写好一篇文章后，需要重新打包成静态文件（.html），然后将静态文件上传到服务器（需要自己准备）上，然后通过 nginx 配置域名访问。如今有了自动化部署，你只需要将代码 push 到 Github 上，然后通过 CI/CD 自动化部署到服务器上。可以参考 [ci.yml](https://github.com/kuizuo/blog/blob/main/.github/workflows/ci.yml) 配置文件。
 
-这里推荐使用 [Vercel 部署个人博客](/vercel-deploy-blog)，部署十分简单，你甚至不需要服务器，只需要有个 Github 账号，将你的博客项目添加为一个仓库中即可（也许需要科学上网）。
 
 ## 最后
 
