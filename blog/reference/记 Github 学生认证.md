@@ -4,10 +4,8 @@ title: 记 Github 学生认证
 date: 2022-09-06T00:00:00.000Z
 authors: liuzw
 tags:
-  - 随笔
   - github
 keywords:
-  - 随笔
   - github
 description: 记录本人 Github 学生认证艰辛过程与经验分享。
 image: /img/blog/github-success.png
