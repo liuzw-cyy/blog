@@ -36,16 +36,16 @@ Waline：需要搭建后端服务与数据库服务，提供评论与浏览量�
 
 ```html
 <script src="https://giscus.app/client.js"
-        data-repo="kuizuo/blog"
-        data-repo-id="MDEwOlJlcG9zaXRvcnkzOTc2MjU2MTI="
-        data-category="General"
-        data-category-id="DIC_kwDOF7NJDM4CPK95"
-        data-mapping="title"
+        data-repo="liuzw-cyy/blog"
+        data-repo-id="R_kgDOJS8cbQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJS8cbc4CVoe-"
+        data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
         data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="light"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
         data-lang="zh-CN"
         crossorigin="anonymous"
         async>
@@ -55,14 +55,14 @@ Waline：需要搭建后端服务与数据库服务，提供评论与浏览量�
 由于我在 `src/component/Comment` 组件中做了配置合并，并且支持主题变化、国际化。因此，你只需要复制 `data-repo`, `data-repo-id`, `data-category` 和  `data-category-id` 填写到 `docusaurus.config.js` 中即可，以下是我的配置文件。
 
 ```javascript title='docusaurus.config.js'
-giscus: {
-  repo: 'kuizuo/blog',
-  repoId: 'MDEwOlJlcG9zaXRvcnkzOTc2MjU2MTI=',
-  category: 'General',
-  categoryId: 'DIC_kwDOF7NJDM4CPK95',
-  theme: 'light',
-  darkTheme: 'dark',
-}
+    giscus: {
+      repo: 'liuzw-cyy/blog',
+      repoId: 'R_kgDOJS8cbQ',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOJS8cbc4CVoe-',
+      theme: 'light',
+      darkTheme: 'dark',
+    }
 ```
 
 :::info
