@@ -172,7 +172,7 @@ const config = {
       copyright: `<p><a href="http://beian.miit.gov.cn/" >${beian}</a></p><p>Copyright © 2020 - PRESENT liuzw Built with Docusaurus.</p>`,
     },
     prism: {
-      theme: require('prism-react-renderer/themes/vsLight'),
+      theme: require('prism-react-renderer/themes/vsDark'),
       darkTheme: require('prism-react-renderer/themes/vsDark'),
       additionalLanguages: ['java', 'php', 'rust', 'toml'],
       defaultLanguage: 'javascript',
@@ -265,7 +265,7 @@ const config = {
       }),
     ],
   ],
-  // themes: ['@docusaurus/theme-live-codeblock'],
+  themes: ['@docusaurus/theme-live-codeblock'], //开启代码块实时编辑功能
   plugins: [
     'docusaurus-plugin-matomo',
     'docusaurus-plugin-image-zoom',
