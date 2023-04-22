@@ -1,19 +1,14 @@
+// 设置项目展示的数据
+
 export const projects: Project[] = [
   {
     title: 'liuzw的小站',
     description: '基于Docusaurus v2 静态网站生成器实现个人博客',
     preview: '/img/project/blog.png',
-    website: 'https://kuizuo.cn',
+    website: 'https://liuzw-cyy.cn',
     source: 'https://github.com/liuzw-cyy/blog',
     tags: ['opensource', 'design', 'favorite'],
     type: 'web',
-  },
-  {
-    title: '@kuizuo/http',
-    description: '基于 Axios 封装的 HTTP 类库',
-    website: 'https://www.npmjs.com/package/@kuizuo/http',
-    tags: ['opensource', 'personal'],
-    type: 'personal',
   },
 ]
 

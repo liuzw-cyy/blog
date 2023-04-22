@@ -3,14 +3,14 @@
   "version": "2.3.1",
   "author": {
     "url": "https://github.com/liuzw-cyy",
-    "email": "hi@kuizuo.cn",
+    "email": "liuzw1999@163.com",
     "name": "liuzw"
   },
   "repository": {
     "url": "https://github.com/liuzw-cyy/blog",
     "type": "git"
   },
-  "homepage": "https://kuizuo.cn",
+  "homepage": "https://liuzw-cyy.cn",
   "license": "MIT",
   "scripts": {
     "docusaurus": "docusaurus",

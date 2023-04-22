@@ -11,7 +11,7 @@ const PREFIX = '/pages/';
 const config = {
   title: 'liuzw的小站',
   titleDelimiter: '-',
-  url: 'https://kuizuo.cn',
+  url: 'https://liuzw-cyy.cn',
   baseUrl: '/',
   // c
   onBrokenLinks: 'ignore',
@@ -85,11 +85,11 @@ const config = {
           position: 'right',
           items: [
             {
-              label: '导航',
+              label: '✈导航',
               to: 'resource',
             },
             {
-              label: '项目',
+              label: '❤项目',
               to: 'project',
             },
           ],
@@ -108,24 +108,20 @@ const config = {
           title: '学习',
           items: [
             {
-              label: '标签',
+              label: '💻 全部博文',
               to: 'tags',
             },
             {
-              label: '归档',
+              label: '⏰ 时间轴',
               to: 'archive',
             },
             {
-              label: '技术笔记',
+              label: '📚 Notes',
               to: 'docs/note',
             },
             {
-              label: '实战项目',
+              label: '❤项目',
               to: 'project',
-            },
-            {
-              label: '前端示例',
-              to: 'https://example.kuizuo.cn',
             },
           ],
         },
@@ -138,15 +134,11 @@ const config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/kuizuo',
+              href: 'https://github.com/liuzw-cyy',
             },
             {
               label: '掘金',
-              href: 'https://juejin.cn/user/1565318510545901',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/M8cVcjDxkz',
+              href: 'https://juejin.cn/user/193973670647288',
             },
           ],
         },
@@ -206,7 +198,7 @@ const config = {
       config: {},
     },
     matomo: {
-      matomoUrl: 'https://matomo.kuizuo.cn/',
+      matomoUrl: 'https://matomo.liuzw-cyy.cn/',
       siteId: '1',
       phpLoader: 'matomo.php',
       jsLoader: 'matomo.js',
@@ -224,11 +216,10 @@ const config = {
     },
     socials: {
       github: 'https://github.com/liuzw-cyy',
-      juejin: 'https://juejin.cn/user/1565318510545901',
+      juejin: 'https://juejin.cn/user/193973670647288',
       csdn: 'https://blog.csdn.net/kuizuo12',
       qq: 'https://wpa.qq.com/msgrd?v=3&amp;uin=3358795244&amp;site=qq',
       zhihu: 'https://www.zhihu.com/people/kuizuo',
-      cloudmusic: 'https://music.163.com/#/user/home?id=1333010742',
     },
   },
   headTags: [
