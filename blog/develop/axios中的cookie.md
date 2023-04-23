@@ -1,29 +1,28 @@
 ---
 slug: cookie-of-node-and-browser
-title: node与浏览器中的cookie
+title: Node与浏览器中的Cookie
 date: 2020-12-10T00:00:00.000Z
 authors: liuzw
 tags:
-  - node
-  - axios
-  - cookie
+  - Node
+  - Axios
+  - Cookie
 keywords:
-  - node
-  - axios
-  - cookie
+  - Node
+  - Axios
+  - Cookie
 ---
 
 <!-- truncate -->
 
 ## 前言
 
-记录一下自己在 nodejs 中使用 http 请求库 axios 中的一些坑（针对 Cookie 操作）
+记录一下自己在 `Node.js` 中使用 `HTTP` 请求库 `Axios` 中的一些坑（针对 `Cookie` 操作）
 
-不敢说和别人封装的 axios 相比有多好，但绝对是你能收获到 axios 的一些知识，话不多说，开始
 
 ## 封装
 
-一般而言，很少有裸装使用 axios 的，就我涉及的项目来说，我都会将 axios 的 request 封装成一个函数使用，接着在 api 目录下，引用该文件。项目结构一般是这样的：
+一般而言，很少有裸装使用 `Axios` 的，就我涉及的项目来说，我都会将 `Axios` 的 `Request` 封装成一个函数使用，接着在 `api` 目录下，引用该文件。项目结构一般是这样的：
 
 ```
 |-- src
@@ -82,7 +81,7 @@ instance.interceptors.response.use(
 export default instance
 ```
 
-实际上，上面那样的封装就够了，相对于的业务代码就不补充了，如果你的宿主环境是浏览器的话，很多东西你就没必要在折腾的，甚至下面的文章都没必要看（不过还是推荐你看看，会有帮助的）。不过没完，再看看 api 里怎么使用的
+实际上，上面那样的封装就够了，相对于的业务代码就不补充了，如果你的宿主环境是浏览器的话，很多东西你就没必要在折腾的，甚至下面的文章都没必要看（不过还是推荐你看看，会有帮助的）。不过没完，再看看 `api` 里怎么使用的
 
 #### api/user.js
 
@@ -112,17 +111,17 @@ export function logout() {
 }
 ```
 
-看来很简单，没错，就是这么简单，由于是运行在浏览器内的，所以像 cookies，headers 等等都没必要设置，浏览器会自行携带该有的设置，其实想设置也设置不了，主要就是浏览器内置跨域问题。[XMLHttpRequest](https://fetch.spec.whatwg.org/#concept-header-name)
+看来很简单，没错，就是这么简单，由于是运行在浏览器内的，所以像 `Cookies`，`Headers` 等等都没必要设置，浏览器会自行携带该有的设置，其实想设置也设置不了，主要就是浏览器内置跨域问题。[XMLHttpRequest](https://fetch.spec.whatwg.org/#concept-header-name)
 
 就这？感觉你写的跟别人没什么区别啊
 
-别急，下面才是重头戏。也是我为啥标题只写 axios，而不写 vue-axios 或者 axios 封装的原因。
+别急，下面才是重头戏。也是我为啥标题只写 `Axios`，而不写 `vue-axios` 或者 `Axios` 封装的原因。
 
 ## 踩坑 Cookies 获取与设置
 
 ### 浏览器
 
-运行环境在浏览器中，axios 是无法设置与获取 cookie，获取不到 set-cookies 这个协议头的（即使服务器设置了也没用），先看代码与输出
+运行环境在浏览器中，`Axios` 是无法设置与获取 `Cookie`，获取不到 `set-cookies` 这个协议头的（即使服务器设置了也没用），先看代码与输出
 
 ```js
 instance.interceptors.request.use((config) => {
@@ -141,15 +140,15 @@ instance.interceptors.response.use((response) => {
 
 ![image-20201210060704240](https://img.kuizuo.cn/image-20201210060704240.png)
 
-首先，就是圈的这个，浏览器是不许允许设置一些不安全的协议头，例如 Cookie，Orgin，Referer 等等，即便你看到控制台 config.headers 确实有刚刚设置 cookie，但我们输出的也只是 headers 对象，在 Network 中找到这个请求，也同样看不到 Cookie 设置的（这就不放图了）。
+首先，就是圈的这个，浏览器是不许允许设置一些不安全的协议头，例如 `Cookie`，`Orgin`，`Referer` 等等，即便你看到控制台 `Config.headers` 确实有刚刚设置 `Cookie`，但我们输出的也只是 `Headers` 对象，在 `Network` 中找到这个请求，也同样看不到 C`ookie` 设置的（这就不放图了）。
 
-同样的，通过响应拦截器中输出的 headers 中也没有 set-cookies 这个字样。网络上很多都是说，添加这么一行代码 `withCredentials: true`，确实，但是没说到重点，都没讲述到怎么获取 cookies 的，因为在**浏览器环境中 axios 压根就获取不到 set-cookies 这个协议头**，实际上 axios 就没必要，因为浏览器会自行帮你获取服务器返回的 Cookies，并将其写入在 Storage 里的 Cookies 中，再下次请求的时候根据同源策略携带上对应的 Cookie。
+同样的，通过响应拦截器中输出的 `Headers` 中也没有 `set-cookies` 这个字样。网络上很多都是说，添加这么一行代码 `withCredentials: true`，确实，但是没说到重点，都没讲述到怎么获取 `Cookies` 的，因为在**浏览器环境中 `axios` 压根就获取不到 `set-cookies` 这个协议头**，实际上 `Axios` 就没必要，因为浏览器会自行帮你获取服务器返回的 `Cookies`，并将其写入在 `Storage` 里的 `Cookies` 中，再下次请求的时候根据同源策略携带上对应的 `Cookie`。
 
 ![image-20201210061627824](https://img.kuizuo.cn/image-20201210061627824.png)
 
-要获取也很简单，vue 中通过`js-cookie`模块即可，而在 electron 中通过`const { session } = require('electron').remote` （electron 可以设置允许跨域，好用）有关更多可以自行查看文档。
+要获取也很简单，`Vue` 中通过`js-cookie`模块即可，而在 `electron` 中通过`const { session } = require('electron').remote` （`electron` 可以设置允许跨域，好用）有关更多可以自行查看文档。
 
-那我就是想要设置 Cookies，来跳过登录等等咋办，我的建议是别用浏览器来伪装 http 请求。跨域是浏览器内不可少的一部分，并且要允许跨域过于麻烦。有关跨域，我推一篇文章[10 种跨域解决方案（附终极大招）](https://juejin.cn/post/6844904126246027278)
+那我就是想要设置 `Cookies`，来跳过登录等等咋办，我的建议是别用浏览器来伪装 `HTTP` 请求。跨域是浏览器内不可少的一部分，并且要允许跨域过于麻烦。有关跨域，我推一篇文章[10 种跨域解决方案（附终极大招）](https://juejin.cn/post/6844904126246027278)
 
 #### 完整封装代码
 
@@ -235,7 +234,7 @@ export default service
 
 ### Nodejs
 
-作为 nodejs 的主流 http 框架怎么能只用在浏览器上，nodejs 自然而然可以，不过 nodejs 需要配置的可就多了，在 nodejs 环境中，自然没有浏览器的同源策略，像上面设置不了的 Cookie，现在随便设置，先看看我是怎么封装的：
+作为 `Node.js` 的主流 `HTTP` 框架怎么能只用在浏览器上，`Node.js` 自然而然可以，不过 `Node.js` 需要配置的可就多了，在 `Node.js` 环境中，自然没有浏览器的同源策略，像上面设置不了的 `Cookie`，现在随便设置，先看看我是怎么封装的：
 
 ```js
 import axios from 'axios'
@@ -323,7 +322,7 @@ Content-Length: 100
 ....
 ```
 
-有我们自定义的 Cookie，在看看响应的协议头
+有我们自定义的 `Cookie`，在看看响应的协议头
 
 ```js
 test -> res.headers {
@@ -342,19 +341,19 @@ test -> res.headers {
 }
 ```
 
-同样能获取到 set-cookie，设置与获取都是这么 so easy ，不同于上面浏览器的配置。
+同样能获取到 `set-cookie`，设置与获取都是这么 so easy ，不同于上面浏览器的配置。
 
-这里我要说明一些东西，在封装代码中有个 httpAgent 与 httpsAgent，你可以字面翻译就是 http 代理，设置它用来干嘛呢，其中有这么个属性 `keepAlive: true` ，如果设置了协议头中的将会有 `Connection: keep-alive`，而不设置则 `Connection: close`，这里也不想过多说明 http 相关知识，如果只是请求一次,那么两者没有太大区别
+这里我要说明一些东西，在封装代码中有个 `httpAgent` 与 `httpsAgent`，你可以字面翻译就是 `HTTP` 代理，设置它用来干嘛呢，其中有这么个属性 `keepAlive: true` ，如果设置了协议头中的将会有 `Connection: keep-alive`，而不设置则 `Connection: close`，这里也不想过多说明 `HTTP` 相关知识，如果只是请求一次,那么两者没有太大区别
 
-然而如果我请求一次,过一会(几秒内)又要请求了,那么 keep-alive 一次连接就可以处理多个请求，而 close 则是一次请求后就断开，下次就需要再次连接。说白了就是快一点，而 close 需要不断连接，断开，自然而然就慢。一般来说设置 keep-alive 就对了。
+然而如果我请求一次,过一会(几秒内)又要请求了,那么 `keep-alive` 一次连接就可以处理多个请求，而 `close` 则是一次请求后就断开，下次就需要再次连接。说白了就是快一点，而 `close` 需要不断连接，断开，自然而然就慢。一般来说设置 `keep-alive` 就对了。
 
-其中在 httpsAgent 中，还有一个属性`rejectUnauthorized: false`，说简单点，就是不抛出验证错误，在抓 nodejs 包的时候，如果不通过设置代理服务器（Fiddler，Charles），而是通过网卡（HTTP Analyzer，Wireshark）就会抛出异常，一般就会出现这种错误。
+其中在 `httpsAgent` 中，还有一个属性`rejectUnauthorized: false`，说简单点，就是不抛出验证错误，在抓 `Node.js` 包的时候，如果不通过设置代理服务器（Fiddler，Charles），而是通过网卡（HTTP Analyzer，Wireshark）就会抛出异常，一般就会出现这种错误。
 
 ```
 Error: unable to verify the first certificate
 ```
 
-然而问题就来了，服务端的返回的 set-cookie 该怎么保存。如果只是涉及客户端层面的，想写一个模拟 http 请求的，直接将获取到的 cookies 与原有的 cookie 合并即可。我那时候的代码就是这样：
+然而问题就来了，服务端的返回的 `set-cookie` 该怎么保存。如果只是涉及客户端层面的，想写一个模拟 `HTTP` 请求的，直接将获取到的 `Cookies` 与原有的 `Cookie` 合并即可。我那时候的代码就是这样：
 
 ```js
 let newCookie = res.header['set-cookie']
@@ -372,13 +371,13 @@ res[cookie] = newCookies
 return res
 ```
 
-然后返回响应中携带 res.cookies 即可，下次请求的时候再将其在带上。
+然后返回响应中携带 `res.cookies` 即可，下次请求的时候再将其在带上。
 
-如果只是，利用 nodejs 来实现类似爬虫，模拟登录，然后利用登录后的 cookie，来获取用户信息。如果不希望手动处理 cookies 的话，我其实还是推荐一个 http 模块，superagent，做一些小爬虫和模拟请求挺好用的，就不做过多介绍了。不过由于 nestjs 中自带 axios 模块，加上需要转发 http 请求，于是我就自行封装了一个 axios。
+如果只是，利用 `Node.js` 来实现类似爬虫，模拟登录，然后利用登录后的 `Cookie`，来获取用户信息。如果不希望手动处理 `Cookies` 的话，我其实还是推荐一个 `HTTP` 模块，`superagent`，做一些小爬虫和模拟请求挺好用的，就不做过多介绍了。不过由于 `Nest.js `中自带 `Axios` 模块，加上需要转发 `HTTP` 请求，于是我就自行封装了一个 `Axios`。
 
 ## 总结
 
-实际上，axios 会根据当前环境，来创建 xhr 对象（浏览器）还是 http 对象（nodejs），在我那时候都以为 axios 是两个共用的，初学 electron 的时候，一直卡在 http 请求的配置
+实际上，`Axios` 会根据当前环境，来创建 `xhr` 对象（浏览器）还是 `HTTP` 对象（`Node.js`），在我那时候都以为 `Axios` 是两个共用的，初学 `electron` 的时候，一直卡在 `HTTP` 请求的配置
 
 ```
   // `adapter` allows custom handling of requests which makes testing easier.
@@ -388,12 +387,12 @@ return res
   },
 ```
 
-在 axios 中也有这么一段配置，翻看了 lib/adapters 下目录我才瞬间醒悟过来，两者环境是不同的。
+在 `Axios` 中也有这么一段配置，翻看了 `lib/adapters` 下目录我才瞬间醒悟过来，两者环境是不同的。
 
 ![image-20201210214055696](https://img.kuizuo.cn/image-20201210214055696.png)
 
-就我使用而言，在浏览器环境下 axios 处理的特别好，允许设置拦截器处理请求与响应，但在 nodejs 下在处理模拟请求确实不如 Python 的 request 模块，奈何 axios 最大的便携就是能直接在浏览器中，尤大推荐的 http 请求库也是 axios。
+就我使用而言，在浏览器环境下 `Axios` 处理的特别好，允许设置拦截器处理请求与响应，但在 `Node.js` 下在处理模拟请求确实不如 `Python` 的 `request` 模块，奈何 `Axios` 最大的便携就是能直接在浏览器中，尤大推荐的 http 请求库也是 axios。
 
-实际上还涉及到了 nodejs 中转发请求的，再给自己留一个坑。
+实际上还涉及到了 `Node.js` 中转发请求的，再给自己留一个坑。
 
-在写这篇文章的时候，我其实都没读过 axios 的源码，说实话，那时候遇到问题，就不应该愚昧的去搜索，去不断尝试，有时候直接通过翻看底层代码，可以一目了然自己所面临问题的解决方式。
+在写这篇文章的时候，我其实都没读过 `Axios` 的源码，说实话，那时候遇到问题，就不应该愚昧的去搜索，去不断尝试，有时候直接通过翻看底层代码，可以一目了然自己所面临问题的解决方式。

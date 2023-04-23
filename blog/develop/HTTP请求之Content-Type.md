@@ -4,16 +4,16 @@ title: HTTP请求之Content-Type
 date: 2020-12-12T00:00:00.000Z
 authors: liuzw
 tags:
-  - http
+  - HTTP
 keywords:
-  - http
+  - HTTP
 ---
 
 <!-- truncate -->
 
 ## Content-type
 
-先看一条 HTTP 请求
+先看一条 `HTTP` 请求
 
 ```http
 POST https://xxx.kuizuo.cn/v2/login HTTP/1.1
@@ -33,7 +33,7 @@ Accept: application/json, text/plain, */*
 { "{\"username\":\"kuizuo\",\"password\":\"a12345678\"}": "" }
 ```
 
-很显然，它把 json 格式解析成了 x-www-form-urlencoded。
+很显然，它把 `JSON` 格式解析成了 `x-www-form-urlencoded`。
 
 一个很简单的登录请求，注意一个协议头`Content-Type`，它决定了你的数据发送到服务端上会是什么格式。
 
@@ -100,7 +100,7 @@ parameter 可选，一些参数，如Accept请求头的q参数， Content-Type�
 
 原因就是因为协议头没有添加`Content-Type: application/json;charset=UTF-8`所导致的。因为这个，坑了我近一个小时，还一直以为是数据错误，没想到仅仅只是少加了一些协议头导致的请求数据格式错误。
 
-一个印象很深刻的教训，模拟 HTTP 请求的时候，一定不要吝啬补全协议头，不然坑的就是自己了。我已经给坑过两次了，所以在特意想借此记录一下，免得下次又是一番折腾。写个注意，醒目一点。
+一个印象很深刻的教训，模拟 `HTTP` 请求的时候，一定不要吝啬补全协议头，不然坑的就是自己了。我已经给坑过两次了，所以在特意想借此记录一下，免得下次又是一番折腾。写个注意，醒目一点。
 
 :::danger
 

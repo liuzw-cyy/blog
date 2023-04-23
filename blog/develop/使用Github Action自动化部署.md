@@ -4,11 +4,11 @@ title: 使用Github Action自动化部署
 date: 2022-05-11T00:00:00.000Z
 authors: liuzw
 tags:
-  - github
-  - git
+  - Github
+  - Git
 keywords:
-  - github
-  - git
+  - Github
+  - Git
 ---
 
 如果有写过项目的经历，就免不了将代码上传到服务器上，安装依赖，然后输入启动命令的步骤。但是有的项目往往需要经常性的改动，如果还是照着上面的方式进行部署的话。先不说这样操作的效率，操作个几次就想罢工了。并且上面这样操作的往往容易误操作。而 Github Actions 正是该问题的良药。
@@ -27,7 +27,7 @@ Github Actions 是 Github 提供的免费自动化构建实现，特别适用于
 
 ## 实例：将 VIte 项目发布到 GitHub Pages
 
-第一步：创建一个 Vite 工程，可在[官网](https://cn.vitejs.dev/guide/#scaffolding-your-first-vite-project)中查看如何安装
+第一步：创建一个 `Vite` 工程，可在[官网](https://cn.vitejs.dev/guide/#scaffolding-your-first-vite-project)中查看如何安装
 
 ```
 pnpm create vite
@@ -43,7 +43,7 @@ pnpm create vite
 
 上面代码中，将`[username]`替换成你的 GitHub 用户名。
 
-第三步：在这个仓库的`.github/workflows`目录，生成一个 workflow 文件，名字可以随便取，这个示例是`ci.yml`。
+第三步：在这个仓库的`.github/workflows`目录，生成一个 `workflow` 文件，名字可以随便取，这个示例是`ci.yml`。
 
 workflow 文件如下
 
@@ -113,17 +113,17 @@ token 只会在生成的时候显示一次，如需要再次显示，则可以�
           yarn run build --base=/vite-project/
 ```
 
-git push 后，稍等片刻再次访问便可得到如下页面
+`git push` 后，稍等片刻再次访问便可得到如下页面
 
 ![image-20220511125536189](https://img.kuizuo.cn/image-20220511125536189.png)
 
 ## FTP发布到自有服务器上
 
-那么现在在 Github Page 上搭建好了，但还要将编译后的文件还可以通过 FTP 协议添加自己的服务器上，这里我就以我的博客为例。
+那么现在在 Github Page 上搭建好了，但还要将编译后的文件还可以通过 `FTP` 协议添加自己的服务器上，这里我就以我的博客为例。
 
-在服务器中开启 FTP，并添加一个用户名,密码以及根目录(这里我问选择为项目目录)
+在服务器中开启 `FTP`，并添加一个用户名,密码以及根目录(这里我问选择为项目目录)
 
-workflow 要做的就是新建一个 steps，这里选用 [FTP-Deploy-Action](https://github.com/SamKirkland/FTP-Deploy-Action)，以下是我的完整配置内容
+`workflow` 要做的就是新建一个 `steps`，这里选用 [FTP-Deploy-Action](https://github.com/SamKirkland/FTP-Deploy-Action)，以下是我的完整配置内容
 
 ```yml
 name: FTP Deploy
@@ -158,13 +158,13 @@ jobs:
           server-dir: ./
 ```
 
-相信第一个实例中的 workflow 应该已经明白了，其中 ftp_server，ftp_user，ftp_pwd 都是私密信息，所以需要 New repository secret 设置这三个变量。
+相信第一个实例中的 `workflow` 应该已经明白了，其中 `ftp_server`，`ftp_user`，`ftp_pwd` 都是私密信息，所以需要 `New repository secret` 设置这三个变量。
 
-但由于 build 下存在大量文件夹与文件，所以 FTP 速度上传速度堪忧，最终耗时 17 minutes 38.4 seconds。这里只是作为 FTP 演示。
+但由于 `build` 下存在大量文件夹与文件，所以 `FTP` 速度上传速度堪忧，最终耗时 17 minutes 38.4 seconds。这里只是作为 `FTP` 演示。
 
 ## SCP发布到自有服务器上
 
-FTP 传输文件着实过慢，所以可以通过 SCP 的方式来传输文件，这里用到了[ssh deploy · Actions](https://github.com/marketplace/actions/ssh-deploy)，以下是示例
+`FTP` 传输文件着实过慢，所以可以通过 `SCP` 的方式来传输文件，这里用到了[ssh deploy · Actions](https://github.com/marketplace/actions/ssh-deploy)，以下是示例
 
 ```yaml
 name: ci
@@ -203,7 +203,7 @@ jobs:
           TARGET: '/www/wwwroot/blog'
 ```
 
-其中 **PRIVATE_KEY** 为服务器SSH登录的私钥，**REMOTE_HOST** 就是服务器的ip地址。当然，这些参数也都作为私密信息，也是要通过New repository secret来设置的。
+其中 **PRIVATE_KEY** 为服务器 `SSH` 登录的私钥，**REMOTE_HOST** 就是服务器的 `ip` 地址。当然，这些参数也都作为私密信息，也是要通过 `New repository secret` 来设置的。
 
 ## 总结
 

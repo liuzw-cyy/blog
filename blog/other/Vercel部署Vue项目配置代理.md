@@ -10,32 +10,32 @@ authors: liuzw
 link: https://github.com/liuzw-cyy
 ---
 
-Vercel 是一个用于静态站点和无服务器功能的云平台，它使开发人员能够托管即时部署、自动扩展、无需监督、无需配置的网站和web服务。
+`Vercel` 是一个用于静态站点和无服务器功能的云平台，它使开发人员能够托管即时部署、自动扩展、无需监督、无需配置的网站和 `Web` 服务。
 
 <!-- truncate -->
 ## 问题
-Vercel 是一个用于静态站点和无服务器功能的云平台，它使开发人员能够托管即时部署、自动扩展、无需监督、无需配置的网站和web服务。
+`Vercel` 是一个用于静态站点和无服务器功能的云平台，它使开发人员能够托管即时部署、自动扩展、无需监督、无需配置的网站和 `Web` 服务。
 
-默认部署一个web服务时，下面两个场景会发生问题：
+默认部署一个 `Web` 服务时，下面两个场景会发生问题：
 
-  * 请求了跨域资源，开发阶段配置了代理，但是 Vercel 部署默认不会配置
-  * 请求的是 HTTP 协议的资源，Vercel 部署的站点是 HTTPS 协议的，所以浏览器会阻止
+  * 请求了跨域资源，开发阶段配置了代理，但是 `Vercel` 部署默认不会配置
+  * 请求的是 `HTTP` 协议的资源，`Vercel` 部署的站点是 `HTTPS` 协议的，所以浏览器会阻止
 
-可以通过配置 Vercel 服务端代理来解决。
+可以通过配置 `Vercel` 服务端代理来解决。
 
 Vercel 配置服务端代理步骤：
 
-  * 部署 serverless，实现代理
-  * 配置相应的路径，统一转发到 serverless 服务
+  * 部署 `serverless`，实现代理
+  * 配置相应的路径，统一转发到 `serverless` 服务
 
 ## 示例
 1.安装代理中间件：
 ```js
 npm i -D http-proxy-middleware
 ```
-在项目根目录下创建**api**目录，在**api**下添加proxy.js文件。
+在项目根目录下创建 `api` 目录，在 `api` 下添加 `proxy.js` 文件。
 
-注意：只有在**api**目录下的proxy.js文件才可以被识别。
+注意：只有在 `api` 目录下的 `proxy.js` 文件才可以被识别。
 ```js
 // 该服务为 vercel serve跨域处理
 const { createProxyMiddleware } = require('http-proxy-middleware')
@@ -61,7 +61,7 @@ module.exports = (req, res) => {
   })(req, res)
 }
 ```
-2.根目录下新建vercel.json
+2.根目录下新建 `vercel.json` 文件
 ```json
 {
   "rewrites": [
@@ -72,4 +72,4 @@ module.exports = (req, res) => {
   ]
 }
 ```
-完成上述两步之后重新Push代码即可。
+完成上述两步之后重新 `Push` 代码即可。
