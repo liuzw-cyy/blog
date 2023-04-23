@@ -22,7 +22,7 @@ module.exports = function (context, options) {
             tagName: 'meta',
             attributes: {
               name: 'baidu-site-verification',
-              content: 'codeva-zPGOR4OGLU',
+              content: 'codeva-0yni0jgrLX',
             },
           },
         ],
