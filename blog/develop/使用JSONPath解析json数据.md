@@ -1,28 +1,28 @@
 ---
 slug: use-jsonpath-to-parse-json-data
-title: 使用JSONPath解析json数据
+title: 使用JSONPath解析JSON数据
 date: 2021-09-20T00:00:00.000Z
 authors: liuzw
 tags:
-  - javascript
-  - json
-  - node
+  - JavaScript
+  - JSON
+  - Node
 keywords:
-  - javascript
-  - json
-  - node
-description: jsonpath 能够帮助我们快速的从json数据中提取想要的数据
+  - JavaScript
+  - JSON
+  - Node
+description: JSONPath 能够帮助我们快速的从json数据中提取想要的数据
 image: /img/blog/jsonpath.png
 sticky: 3
 ---
 
-之前学习爬虫的时候，如果是 HTML 的数据，通过 xpath 或是 css 选择器，就能很快的获取我们想要的数据，如果是 json 有没有类似 xpath 这种，能够直接根据条件定位数据，而不需要自行 json 解析在遍历获取。答案是有的，也就是 JSONPath。
+之前学习爬虫的时候，如果是 `HTML` 的数据，通过 ``Xpath`` 或是 `CSS` 选择器，就能很快的获取我们想要的数据，如果是 `JSON` 有没有类似 `Xpath` 这种，能够直接根据条件定位数据，而不需要自行 `JSON` 解析在遍历获取。答案是有的，也就是 `JSONPath`。
 
 <!-- truncate -->
 
 在线测试网址 [JSONPath 在线验证](https://www.jsonpath.cn/)
 
-所选用的环境是 Node + JavaScript，用到 jsonpath 这个包 [jsonpath - npm (npmjs.com)](https://www.npmjs.com/package/jsonpath)
+所选用的环境是 `Node` + `JavaScript`，用到 `JSONPath` 这个包 [jsonpath - npm (npmjs.com)](https://www.npmjs.com/package/jsonpath)
 
 > 参考链接 [JsonPath - 根据表达式路径解析 Json - 简书 (jianshu.com)](https://www.jianshu.com/p/8c0ade82891b)
 
@@ -80,7 +80,7 @@ var names = jp.query(cities, '$..name')
 // [ "London", "Berlin", "Madrid", "Rome" ]
 ```
 
-如果使用 js 来遍历的话，也简单
+如果使用 `JavaScript` 来遍历的话，也简单
 
 ```js
 let names = cities.map((c) => c.name)
@@ -140,7 +140,7 @@ let names = cities.map((c) => c.name)
 | `$..book[?(@.price<10)]`                   | 过滤`price<10`的节点                         |
 | `$..*`                                     | 递归匹配所有子节点                           |
 
-对应的语法可直接到在 JSONPath 在线验证网站上进行测试。要提一点的是，jsonpath 是支持使用 || 与 && 进行过滤的，比如上面要获取 category 为 fiction，price 大于 10 的语法为`$..book[?(@.price>10 && @.category=="fiction")]` 结果如下
+对应的语法可直接到在 `JSONPath` 在线验证网站上进行测试。要提一点的是，`JSONPath` 是支持使用 || 与 && 进行过滤的，比如上面要获取 `category` 为 `fiction`，`price` 大于 10 的语法为`$..book[?(@.price>10 && @.category=="fiction")]` 结果如下
 
 ```json
 [
@@ -162,7 +162,7 @@ let names = cities.map((c) => c.name)
 
 ## 终极实战
 
-也许你会觉得上面的例子太过简单了，可能没达到你预期所想要的效果，甚至还不如使用 json 遍历呢，下面我列举一个是我实战中遇到的例子（实际上这样的例子特别多），我先把部分数据展示出来（删除部分没用到的参数，实际参数远比这多），然后通过 js 遍历，以及 jsonpath 来获取我想要的数据。
+也许你会觉得上面的例子太过简单了，可能没达到你预期所想要的效果，甚至还不如使用 `JSON` 遍历呢，下面我列举一个是我实战中遇到的例子（实际上这样的例子特别多），我先把部分数据展示出来（删除部分没用到的参数，实际参数远比这多），然后通过 `JavaScript` 遍历，以及 `JSONPath` 来获取我想要的数据。
 
 ### 结构
 
@@ -424,11 +424,11 @@ let names = cities.map((c) => c.name)
 
 ### 需求
 
-可以看到数据比一开始的例子复杂了可不是一点，不过先别管这些数据是干啥的，说说需求，从结构上也能看出来，是有很多`children`嵌套的，而需求就是**获取`role`为`group`的`children`节点数据**
+可以看到数据比一开始的例子复杂了可不是一点，不过先别管这些数据是干啥的，说说需求，从结构上也能看出来，是有很多 `children` 嵌套的，而需求就是**获取 `role` 为 `group` 的 `children` 节点数据**
 
-### js 实现遍历
+### JavaScript 实现遍历
 
-先说说 js 如何实现的，我贴一下对应的代码（当时项目的代码，稍微修改的一点），可自己粘贴运行一下。
+先说说 `JavaScript` 如何实现的，我贴一下对应的代码（当时项目的代码，稍微修改的一点），可自己粘贴运行一下。
 
 ```js
 let groupList = []
@@ -451,11 +451,11 @@ for (const node of json.children ?? []) {
 console.log(groupList)
 ```
 
-因为这些数据中，是存在不确定性的，也就是在当前节点下，二级节点可能有`children`，而其他节点下的二级很可能没有 `children`，所以我在这边就加上 `?? []` （Typescript 中的`??`语法，你可以把 `??` 当做 `||` ）来判断是否有`children`节点，有些读者可能会思考，为啥不用递归呢。说的是挺轻松的，但是递归是很容易出问题的，万一爬取到后台数据进行了一些修改，很有可能对于的递归算法将失效，甚至导致堆栈溢出，所以我这边值循环 4 级`chilren`节点（实际遇到的貌似也只有 4 级，谁又能保证爬取到数据就一定只有 4 级呢）。
+因为这些数据中，是存在不确定性的，也就是在当前节点下，二级节点可能有 `children`，而其他节点下的二级很可能没有 `children`，所以我在这边就加上 `?? []` （Typescript 中的`??`语法，你可以把 `??` 当做 `||` ）来判断是否有 `children` 节点，有些读者可能会思考，为啥不用递归呢。说的是挺轻松的，但是递归是很容易出问题的，万一爬取到后台数据进行了一些修改，很有可能对于的递归算法将失效，甚至导致堆栈溢出，所以我这边值循环 4 级 `chilren` 节点（实际遇到的貌似也只有 4 级，谁又能保证爬取到数据就一定只有 4 级呢）。
 
 ### jsonpath 获取
 
-于是了解到 jsonpath 后，我第一个时间就开始分析这样的数据，果不其然，得到了我想要的结果 ⬇️
+于是了解到 `JSONPath` 后，我第一个时间就开始分析这样的数据，果不其然，得到了我想要的结果 ⬇️
 
 ![image-20210919200826079](https://img.kuizuo.cn/image-20210919200826079.png)
 
@@ -463,12 +463,11 @@ console.log(groupList)
 
 语法意思很明确，根节点下遍历所有`children`节点，同时`role`等于`group`，呈现的效果如上图。
 
-而回到需求，**就是获取`role`为`group`的`children`节点数据**，而 jsonpath 就帮我轻松实现我想要的效果。
+而回到需求，**就是获取`role`为`group`的`children`节点数据**，而 `JSONPath` 就帮我轻松实现我想要的效果。
 
 ## 最终思考
 
-实际上这样的需求我已经不止遇到一次，二次了，然而我寻求百度与群友的时候，给我的结果都不尽人意。但都没有提及到 jsonpath 来进行获取。也许是我的搜索方式有问题，但千篇一律都是 js 如何解析多层 json，以及遍历所有的子元素，虽然这些办法确实能解决我的问题，但每次遇到这种数据，都需要花上长时间去编写对应的逻辑。
+实际上这样的需求我已经不止遇到一次，二次了，然而我寻求百度与群友的时候，给我的结果都不尽人意。但都没有提及到 `JSONPath` 来进行获取。也许是我的搜索方式有问题，但千篇一律都是 `JavaScript` 如何解析多层 `JSON`，以及遍历所有的子元素，虽然这些办法确实能解决我的问题，但每次遇到这种数据，都需要花上长时间去编写对应的逻辑。
 
-在回想起当时爬取 HTML 页面数据的时候（数据与上面展示的差不多，都是树结构多层），而我只接触到了正则表达式，没了解过 CSS 选择器与 xpath。怎么办，为了实现目的，只好用现有的技术去实现，于是编写一个正则表达式就花费了近一个下午的时间，而使用 CSS 选择器 10 分钟不到就达到目的。没想到竟然有这么好用的方法，早知道多去了解点技术了。可能现在的心情和当时一样，只不过 HTML 换成了 JSON，编辑器还是那个编辑器，而我依旧还是我
+在回想起当时爬取 `HTML` 页面数据的时候（数据与上面展示的差不多，都是树结构多层），而我只接触到了正则表达式，没了解过 `CSS` 选择器与 `Xzpath`。怎么办，为了实现目的，只好用现有的技术去实现，于是编写一个正则表达式就花费了近一个下午的时间，而使用 `CSS` 选择器 10 分钟不到就达到目的。没想到竟然有这么好用的方法，早知道多去了解点技术了。可能现在的心情和当时一样，只不过 `HTML` 换成了 `JSON`，编辑器还是那个编辑器，而我依旧还是我。
 
-也许这就是编程，也许这就是人生。
