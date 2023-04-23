@@ -30,11 +30,11 @@ const config = {
       },
       {
         name: 'keywords',
-        content: 'blog, javascript, typescript, node, react, vue, web',
+        content: 'Blog, JavaScript, TypeScript, Node, React, Vue, Web',
       },
       {
         name: 'keywords',
-        content: '编程爱好者, Web开发者, 写过爬虫, 学过逆向，现在主攻ts全栈',
+        content: '编程爱好者, 研究生做过深度学习，现在是一名Web开发者',
       },
     ],
     docs: {

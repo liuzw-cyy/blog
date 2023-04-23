@@ -17,8 +17,6 @@ export default function BlogPostPageMetadata(): JSX.Element {
     >
       <meta property="og:type" content="article" />
       <meta property="article:published_time" content={date} />
-      {/* 添加百度收录 */}
-      <meta name="baidu-site-verification" content="codeva-zPGOR4OGLU" />
       {/* TODO double check those article meta array syntaxes, see https://ogp.me/#array */}
       {authors.some(author => author.url) && (
         <meta

@@ -1,3 +1,5 @@
+// 设置百度统计和百度收录
+
 module.exports = function (context, options) {
   return {
     name: 'docusaurus-plugin-baidu-tongji',
@@ -10,8 +12,7 @@ module.exports = function (context, options) {
             var _hmt = _hmt || [];
             (function() {
               var hm = document.createElement("script");
-              hm.src = "https://hm.baidu.com/hm.js?c9a3849aa75f9c4a4e65f846cd1a5155";
-              hm.defer = true;
+              hm.src = "https://hm.baidu.com/hm.js?866591fd71207fc081b23aebd2377b25";
               var s = document.getElementsByTagName("script")[0];
               s.parentNode.insertBefore(hm, s);
             })();
@@ -21,7 +22,7 @@ module.exports = function (context, options) {
             tagName: 'meta',
             attributes: {
               name: 'baidu-site-verification',
-              content: 'code-rqLUw5reVS',
+              content: 'codeva-zPGOR4OGLU',
             },
           },
         ],
