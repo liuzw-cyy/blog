@@ -4,11 +4,11 @@ title: JS函数中的Hook
 date: 2021-11-22T00:00:00.000Z
 authors: liuzw
 tags:
-  - javascript
-  - hook
+  - JavaScript
+  - Hook
 keywords:
-  - javascript
-  - hook
+  - JavaScript
+  - Hook
 ---
 
 `Hook` 直译的意思为钩子，通常用来针对某些参数，变量进行侦听，打印输出，替换等操作。
