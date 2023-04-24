@@ -1,12 +1,12 @@
 ---
-title: JavaScript技巧
-date: '2023-04-23'
+title: JavaScript设计模式
+date: '2023-04-24'
 authors: liuzw
 url: 'https://github.com/liuzw-cyy'
 tags:
-  - 分类页面
-slug: /pages/4eea06/
-id: JavaScript技巧-guides
+  - 未分类
+slug: /pages/0d1a5a/
+id: JavaScript设计模式-guides
 ---
 
 import DocCardList from '@theme/DocCardList';
