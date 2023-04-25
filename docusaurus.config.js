@@ -217,9 +217,8 @@ const config = {
     socials: {
       github: 'https://github.com/liuzw-cyy',
       juejin: 'https://juejin.cn/user/193973670647288',
-      csdn: 'https://blog.csdn.net/kuizuo12',
       qq: 'https://wpa.qq.com/msgrd?v=3&amp;uin=3358795244&amp;site=qq',
-      zhihu: 'https://www.zhihu.com/people/kuizuo',
+      zhihu: 'https://www.zhihu.com/people/liuzw-cyy',
     },
   },
   headTags: [
