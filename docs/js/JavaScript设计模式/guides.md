@@ -4,7 +4,7 @@ date: '2023-04-24'
 authors: liuzw
 url: 'https://github.com/liuzw-cyy'
 tags:
-  - 未分类
+  - 设计模式
 slug: /pages/0d1a5a/
 id: JavaScript设计模式-guides
 ---
